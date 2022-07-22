@@ -14,14 +14,4 @@ public class WebGeneric {
 			Reporter.log("Homepage not displayed",true);
 		}	
 	}
-	public void verifyUrl(WebDriver driver, String expectedUrl) throws InterruptedException{
-		Thread.sleep(2000);
-		String actualUrl=driver.getCurrentUrl();
-		if(actualUrl.contains(expectedUrl)) {
-			Reporter.log("Homepage displayed",true);
-		}
-		else {
-			Reporter.log("Homepage not displayed",true);
-		}	
-	}
 }
